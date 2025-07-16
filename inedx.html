@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wulkan - Warsztat Samochodowy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #666;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services, .contact, .map {
+      margin-top: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .call-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wulkan - Warsztat Samochodowy</h1>
+    <p>Właściciel: Robert Hoksa</p>
+  </header>
+
+  <nav>
+    <a href="#services">Usługi</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#contact">Kontakt</a>
+    <a href="#map">Lokalizacja</a>
+  </nav>
+
+  <div class="container">
+    <section id="services" class="services">
+      <h2>Nasze usługi</h2>
+      <ul>
+        <li>Naprawa układu zawieszenia</li>
+        <li>Naprawa układu hamulcowego</li>
+        <li>Naprawa układu napędowego</li>
+        <li>Naprawa silników</li>
+        <li>Diagnostyka komputerowa</li>
+        <li>Wulkanizacja</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Galeria</h2>
+      <img src="https://source.unsplash.com/400x300/?car,repair" alt="Zdjęcie warsztatu">
+      <img src="https://source.unsplash.com/400x300/?garage,tools" alt="Zdjęcie narzędzi">
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontakt</h2>
+      <p><strong>Adres:</strong> Osiedle A, 38-542 Rzepedź</p>
+      <p><strong>Telefon:</strong> <a href="tel:+48784444247">+48 784 444 247</a></p>
+      <p><strong>Godziny otwarcia:</strong><br>
+        Poniedziałek - Piątek: 8:00 - 16:00<br>
+        Sobota: 8:00 - 13:00<br>
+        Niedziela: nieczynne
+      </p>
+
+      <form>
+        <input type="text" placeholder="Twoje imię" required>
+        <input type="email" placeholder="Twój e-mail" required>
+        <textarea rows="5" placeholder="Twoja wiadomość" required></textarea>
+        <button type="submit">Wyślij</button>
+      </form>
+    </section>
+
+    <section id="map" class="map">
+      <h2>Gdzie nas znaleźć</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Osiedle%20A,%2038-542%20Rzeped%C5%BA&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+  </div>
+
+  <a href="tel:+48784444247" class="call-button">Zadzwoń teraz</a>
+</body>
+</html>
